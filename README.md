@@ -100,7 +100,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
 - Microsoft Teams
 - Thinkorswim
 - Logos
-- Chrome
+- Arc
 
 ```bash
 brew install -cask {app_name}
