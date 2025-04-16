@@ -102,6 +102,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
 - Logos
 - Arc
 - AppCleaner
+- lookaway
 
 ```bash
 brew install -cask {app_name}
