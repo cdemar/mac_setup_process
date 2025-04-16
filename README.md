@@ -101,6 +101,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
 - Thinkorswim
 - Logos
 - Arc
+- AppCleaner
 
 ```bash
 brew install -cask {app_name}
