@@ -144,10 +144,39 @@ echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlight
 
 2.  **Then Source `.zshrc`**:
 
-```brew
+```bash
 source ~/.zshrc
 ```
+3. **Then open `.zshrc`**:
 
+```bash
+# history setup
+HISTFILE=$HOME/.zhistory
+SAVEHIST=1000
+HISTSIZE=999
+setopt share_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_verify
+```
+This will allow zsh to save the history to a file and configure how it should do so.
+
+Then go back to the command line and run to see what up and down arrows keys are:
+```bash
+cat -v
+```
+Then go back to `.zshrc`:
+```bash
+# completion using arrow keys (based on history)
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+```
+If you installed `eza' add this to `.zshrc':
+```bash
+# ---- Eza (better ls) -----
+
+alias ls="eza --icons=always"
+```
 ---
 
 ## Wezterm and NeoVim Configuration
