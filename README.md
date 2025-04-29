@@ -25,7 +25,11 @@ This README contains instructions for setting up a new Mac. It serves as a guide
      - Change "Click" to "Tap to Click".
      - Set "Secondary Click" to "Click on bottom right".
    - **Dock Settings**:
-     - Go to `Desktop & Dock` and turn on **"Automatically hide and show the Dock"**.
+     - Go to `Desktop & Dock` and change:
+        - "Automatically hide and show the Dock" => On
+        - "Show suggested and recent apps on Dock" => off
+        - Show items => on desktop => off
+        - scrole to bottom => "Hot Corner..." => turn off
    - **Spotlight Settings**:
      - Turn off the following categories under `Spotlight`:
        - Events & Reminders
