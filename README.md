@@ -252,22 +252,7 @@ Follow NeoVim Setup from the [Video](https://www.youtube.com/watch?v=6pAG3BHurdM
 
 ### **Homebrew Maintenance**
 
-1.  **Clean Up**:
-    To clean up old versions of installed formulas:
-
-```bash
-brew cleanup -s
-```
-
-This cleans up only old versions of formulae.
-
-```bash
-brew cleanup --prune=all
-```
-
-This cleans up old versions and also removes all cached downloads and anything that's not required anymore.
-
-2.  **Update Homebrew and Installed Packages**:
+1.  **Update Homebrew and Installed Packages**:
 
 - This will update Homebrew
 
@@ -286,6 +271,21 @@ brew upgrade
 ```brew
 brew upgrade --cask
 ```
+
+2.  **Clean Up**:
+    To clean up old versions of installed formulas:
+
+```bash
+brew cleanup -s
+```
+
+This cleans up only old versions of formulae.
+
+```bash
+brew cleanup --prune=all
+```
+
+This cleans up old versions and also removes all cached downloads and anything that's not required anymore.
 
 3.  **Check for Issues**:
     If you're having issues, run:
