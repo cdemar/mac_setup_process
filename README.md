@@ -103,6 +103,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
 - Arc
 - AppCleaner
 - lookaway
+- spotify
 
 ```bash
 brew install -cask {app_name}
