@@ -65,6 +65,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
    - Keynote
    - Numbers
    - Pages
+   - Usage - Device Monitor
 
    Use the following commands to install apps via `mas`:
 
