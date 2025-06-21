@@ -109,6 +109,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
 - AppCleaner
 - lookaway
 - spotify
+- Obsidian
 
 ```bash
 brew install -cask {app_name}
