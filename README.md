@@ -131,6 +131,20 @@ brew install -cask {app_name}
   brew install {Dev_tool_name}
   ```
 
+### This is to help get Boto3
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+```bash
+pip install boto3
+```
+
+
 ---
 
 ## Terminal Setup
