@@ -127,9 +127,10 @@ brew install -cask {app_name}
 - zsh-syntax-highlighting
 - eza `Improved 'ls' command`
 - nvim `NeoVim`
-  ```bash
-  brew install {Dev_tool_name}
-  ```
+
+```bash
+brew install {Dev_tool_name}
+```
 
 ### This is to help get Boto3
 ```bash
