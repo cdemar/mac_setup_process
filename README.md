@@ -133,18 +133,31 @@ brew install {Dev_tool_name}
 ```
 
 ### This is to help get Boto3
+
+1. Create a virtual environment in your project folder
 ```bash
 python3 -m venv venv
 ```
 
+2. Activate the virtual environment
 ```bash
 source venv/bin/activate
 ```
 
+3. Now install `boto3` inside the virtual environment with pip:
 ```bash
 pip install boto3
 ```
 
+4. Run your Python deploy script while the virtual environment is active
+```bash
+python deploy_github_and_s3.py
+```
+
+5. When you’re done, you can deactivate the virtual environment with:
+```bash
+deactivate
+```
 
 ---
 
