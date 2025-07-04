@@ -8,6 +8,7 @@ This README contains instructions for setting up a new Mac. It serves as a guide
 
 - [System Settings](#system-settings)
 - [Software Installation](#software-installation)
+- [Python Virtual Environment](#python-virtual-environment)
 - [Terminal Setup](#terminal-setup)
 - [Wezterm and NeoVim Configuration](#wezterm-and-neovim-configuration)
 - [Upkeep and Maintenance](#upkeep-and-maintenance)
@@ -132,7 +133,11 @@ brew install -cask {app_name}
 brew install {Dev_tool_name}
 ```
 
-### Use a Virtual Environment (safe & recommended)
+---
+
+## Python Virtual Environment
+
+### Best Solution: Use a Virtual Environment (safe & recommended)
 
 1. Create a virtual environment in your project folder
 ```bash
