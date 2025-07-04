@@ -132,7 +132,7 @@ brew install -cask {app_name}
 brew install {Dev_tool_name}
 ```
 
-### This is to help get Boto3
+### Use a Virtual Environment (safe & recommended)
 
 1. Create a virtual environment in your project folder
 ```bash
@@ -144,20 +144,39 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-3. Now install `boto3` inside the virtual environment with pip:
+3. Now install the package inside the virtual environment with pip:
+- pyperclip
+- boto3
 ```bash
-pip install boto3
+pip install pachage_name
 ```
 
 4. Run your Python deploy script while the virtual environment is active
 ```bash
-python deploy_github_and_s3.py
+python name_of_script.py
 ```
 
 5. When you’re done, you can deactivate the virtual environment with:
-```bash
+##### Option 1
+###### Deactivate the virtual environment
+If you're currently inside the environment (you'll see something like (venv) in your terminal), just run:
+
+'''bash
 deactivate
-```
+'''
+
+This will return you to your system’s default environment.
+
+
+##### Option 2
+###### (Optional) Delete the virtual environment folder
+If you no longer need the environment or want to clean it up:
+
+'''bash
+rm -rf venv
+'''
+
+This deletes the venv folder and all installed packages inside it.
 
 ---
 
