@@ -5,16 +5,17 @@ local config = wezterm.config_builder()
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 18
 config.enable_tab_bar = false
+config.show_update_window = true
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
 config.macos_window_background_blur = 10
 
 -- Make window take full screen space on launch
 config.window_padding = {
-  left = '.5cell',
-  right = '.5cell',
-  top = '0.25cell',
-  bottom = '0.25cell',
+	left = ".5cell",
+	right = ".5cell",
+	top = "0.25cell",
+	bottom = "0.25cell",
 }
 
 -- Make the window large on launch
@@ -36,40 +37,50 @@ config.colors = {
 
 -- Custom keybindings
 config.keys = {
-  -- Horizontal split: Cmd + |
-  {
-    key = "|",
-    mods = "CMD",
-    action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },
-  },
+	-- Horizontal split: Cmd + |
+	{
+		key = "|",
+		mods = "CMD",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
 
-  -- Vertical split: Cmd + _
-  {
-    key = "_",
-    mods = "CMD",
-    action = wezterm.action.SplitVertical { domain = "CurrentPaneDomain" },
-  },
+	-- Vertical split: Cmd + _
+	{
+		key = "_",
+		mods = "CMD",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
 
-  -- Pane navigation
-  { key = "h", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Left") },
-  { key = "l", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Right") },
-  { key = "k", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Up") },
-  { key = "j", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Down") },
+	-- Pane navigation
+	{ key = "h", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Left") },
+	{ key = "l", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Right") },
+	{ key = "k", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Up") },
+	{ key = "j", mods = "CMD", action = wezterm.action.ActivatePaneDirection("Down") },
 
-  -- New tab: Cmd + t
-  {
-    key = "t",
-    mods = "CMD",
-    action = wezterm.action.SpawnTab("CurrentPaneDomain"),
-  },
+	-- New tab: Cmd + t
+	{
+		key = "t",
+		mods = "CMD",
+		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
+	},
 
-  -- Close pane or tab: Cmd + w
-  {
-    key = "w",
-    mods = "CMD",
-    action = wezterm.action.CloseCurrentPane { confirm = false },
-  },
+	{
+		key = "[",
+		mods = "CMD",
+		action = wezterm.action.ActivateTabRelative(-1),
+	},
+	{
+		key = "]",
+		mods = "CMD",
+		action = wezterm.action.ActivateTabRelative(1),
+	},
+
+	-- Close pane or tab: Cmd + w
+	{
+		key = "w",
+		mods = "CMD",
+		action = wezterm.action.CloseCurrentPane({ confirm = false }),
+	},
 }
 
 return config
-
